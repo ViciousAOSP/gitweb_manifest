@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com/" />
+  <remote name="vic"
+          fetch="git://github.com/ViciousAOSP/" />
+  <default revision="refs/tags/android-4.0.4_r1.2"
+           remote="aosp"
+           sync-j="4" />
+
+  <project path="build" name="platform_build" remote="vic" revision="ics">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="" name="platform_device_samsung_maguro" remote="vic" revision="ics" />
+  <project path="" name="platform_device_samsung_toro" remote="vic" revision="ics" />
+  <project path="" name="platform_device_samsung_toroplus" remote="vic" revision="ics" />
+  <project path="" name="platform_device_samsung_tuna" remote="vic" revision="ics" />
+  <project path="" name="platform_device_samsung_crespo" remote="vic" revision="ics" />
+  <project path="" name="platform_device_samsung_crespo4g" remote="vic" revision="ics" />
+  <project path="" name="platform_device_ti_panda" remote="vic" revision="ics" />
+  <project path="" name="platform_frameworks_base" remote="vic" revision="ics" />
+  <project path="" name="platform_packages_apps_AppWidgetPicker" remote="vic" revision="ics" />
+  <project path="" name="platform_packages_apps_Launcher2" remote="vic" revision="ics" />
+  <project path="" name="platform_packages_apps_Mms" remote="vic" revision="ics" />
+  <project path="" name="platform_packages_apps_Phone" remote="vic" revision="ics" />
+  <project path="" name="platform_packages_apps_Settings" remote="vic" revision="ics" />
+  <project path="" name="platform_packages_providers_ContactsProvider" remote="vic" revision="master" />
+  <project path="" name="platform_packages_providers_DownloadProvider" remote="vic" revision="ics" />
+  <project path="" name="platform_system_core" remote="vic" revision="ics" />
+  <project path="" name="platform_vendor_vicious" remote="vic" revision="ics" />
+  <project path="" name="platform_vendor_samsung" remote="vic" revision="ics" />
+
+</manifest>
