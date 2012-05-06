@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com/" />
   <remote name="vic"
           fetch="git://github.com/ViciousAOSP/" />
+  <default revision="refs/tags/android-4.0.4_r1.2"
+           remote="aosp"
+           sync-j="4" />
 
   <project path="build" name="platform_build" remote="vic" revision="ics">
     <copyfile src="core/root.mk" dest="Makefile" />
